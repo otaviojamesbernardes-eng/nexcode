@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Adiciona suporte a dark mode para o projeto */
+:root {
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+/* Garante que o corpo da página ocupe toda a altura */
+html, body {
+  height: 100%;
+}
+
+/* Estilos para o modo escuro */
+.dark body {
+  background-color: #111827; /* gray-900 */
+}
